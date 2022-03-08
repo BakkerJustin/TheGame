@@ -1,0 +1,33 @@
+/* https://www.w3schools.com/css/css3_flexbox_container.asp */
+
+body {
+    display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     gap: 1rem;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 12px;
+     background-image: url("image/landing.jpeg");
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.header{
+    font-family: 'Oldenburg', cursive;
+    font-weight: bold;
+    font-size: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+

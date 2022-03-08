@@ -1,0 +1,35 @@
+
+<!-- https://stackoverflow.com/questions/42180103/how-do-i-make-a-simple-password-page -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Oldenburg&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div class="header"> <img src="image/cat.png" width=20%>HEADER</div>
+    <div class="form">
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <button type="button" value="Submit" onclick="checkPswd();">Submit</button>
+</form>
+</div>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "admin";
+        var password = document.getElementById("pswd").value; 
+        if (password == confirmPassword) {
+             window.location="firstTask.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>

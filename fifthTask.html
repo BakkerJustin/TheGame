@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Oldenburg&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>FifthTask</title>
+</head>
+<body>
+<h1>Welcome!! you entered a right password1</h1>
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "admin5";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="final.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>
